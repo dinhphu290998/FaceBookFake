@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="NotificationTableViewCell" rowHeight="69" id="KGk-i7-Jjw" customClass="NotificationTableViewCell" customModule="Mai_Duye_n" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="379" height="69"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="379" height="68.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="maiduyen" translatesAutoresizingMaskIntoConstraints="NO" id="5rn-IU-Lob">
+                        <rect key="frame" x="5" y="5" width="58.5" height="58.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="5rn-IU-Lob" secondAttribute="height" id="VXA-hT-YRD"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gallery" translatesAutoresizingMaskIntoConstraints="NO" id="eKv-U6-9yc">
+                        <rect key="frame" x="38.5" y="38.5" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="eKv-U6-9yc" secondAttribute="height" id="SDB-Hc-MQx"/>
+                            <constraint firstAttribute="height" constant="30" id="lnp-DH-vTT"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 ngày trước" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tmz-aH-B2N">
+                        <rect key="frame" x="78.5" y="48.5" width="70" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jIh-4I-T2h">
+                        <rect key="frame" x="344" y="19.5" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="IkX-7K-0fU"/>
+                            <constraint firstAttribute="height" constant="30" id="dVT-Ko-Vfc"/>
+                        </constraints>
+                        <state key="normal" title="• • •">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nguyễn Đình Phú và 1000 người khác đã bình luận bài viết của bạn trong Anh Yêu Em" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PnN-EG-bY7">
+                        <rect key="frame" x="73.5" y="5" width="265.5" height="31.5"/>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="tmz-aH-B2N" firstAttribute="leading" secondItem="eKv-U6-9yc" secondAttribute="trailing" constant="10" id="78R-ki-UKX"/>
+                    <constraint firstItem="PnN-EG-bY7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="7T7-ZS-k7O"/>
+                    <constraint firstItem="PnN-EG-bY7" firstAttribute="leading" secondItem="5rn-IU-Lob" secondAttribute="trailing" constant="10" id="AB7-Co-BwO"/>
+                    <constraint firstAttribute="bottom" secondItem="5rn-IU-Lob" secondAttribute="bottom" constant="5" id="HOz-au-qq8"/>
+                    <constraint firstItem="jIh-4I-T2h" firstAttribute="leading" secondItem="PnN-EG-bY7" secondAttribute="trailing" constant="5" id="Hgy-ps-vAC"/>
+                    <constraint firstItem="5rn-IU-Lob" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="UVh-cy-Iae"/>
+                    <constraint firstAttribute="bottom" secondItem="tmz-aH-B2N" secondAttribute="bottom" constant="5" id="aEf-nf-fTD"/>
+                    <constraint firstItem="jIh-4I-T2h" firstAttribute="centerY" secondItem="5rn-IU-Lob" secondAttribute="centerY" id="c7p-P6-dXR"/>
+                    <constraint firstAttribute="trailing" secondItem="jIh-4I-T2h" secondAttribute="trailing" constant="5" id="cNx-ti-J2S"/>
+                    <constraint firstItem="eKv-U6-9yc" firstAttribute="trailing" secondItem="5rn-IU-Lob" secondAttribute="trailing" constant="5" id="cyE-iN-Kqt"/>
+                    <constraint firstItem="5rn-IU-Lob" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="kfK-n6-2c3"/>
+                    <constraint firstAttribute="bottom" secondItem="eKv-U6-9yc" secondAttribute="bottom" id="rvh-dA-xJd"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="photo" destination="5rn-IU-Lob" id="3oX-3x-B0U"/>
+            </connections>
+            <point key="canvasLocation" x="180" y="164.16791604197903"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="gallery" width="21" height="21"/>
+        <image name="maiduyen" width="60" height="60"/>
+    </resources>
+</document>
